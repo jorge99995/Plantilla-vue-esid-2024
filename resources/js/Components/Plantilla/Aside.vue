@@ -22,7 +22,7 @@
                         ></a>
                         <ul>
                             <li>
-                                <router-link >Lista de Usuarios</router-link>
+                                <router-link :to="{ name: 'usuarios'}">Lista de Usuarios</router-link>
 
                             </li>
                             <li><a href="userlists.html">Lista de Roles</a></li>

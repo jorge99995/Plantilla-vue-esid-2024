@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router';
 const DashboardComponent = () => import('./Components/Dashboard/Dashboard.vue');
+const UsuariosComponent = () => import('./Components/Usuarios/Index.vue');
 
 const routes = [
 
@@ -8,6 +9,12 @@ const routes = [
         name: 'dashboard',
         component: DashboardComponent
     },
+    {
+        path: '/usuarios',
+        name: 'usuarios',
+        component: UsuariosComponent
+    },
+
 
 ];
 const router = createRouter({

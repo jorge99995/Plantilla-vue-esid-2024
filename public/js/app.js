@@ -20808,7 +20808,11 @@ function render(_ctx, _cache) {
   var _component_router_link = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("router-link");
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("ul", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
     to: "/"
-  }), _hoisted_5]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", _hoisted_6, [_hoisted_7, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("ul", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, null, {
+  }), _hoisted_5]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", _hoisted_6, [_hoisted_7, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("ul", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
+    to: {
+      name: 'usuarios'
+    }
+  }, {
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
       return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Lista de Usuarios")];
     }),
@@ -21164,10 +21168,17 @@ __webpack_require__.r(__webpack_exports__);
 var DashboardComponent = function DashboardComponent() {
   return __webpack_require__.e(/*! import() */ "resources_js_Components_Dashboard_Dashboard_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./Components/Dashboard/Dashboard.vue */ "./resources/js/Components/Dashboard/Dashboard.vue"));
 };
+var UsuariosComponent = function UsuariosComponent() {
+  return __webpack_require__.e(/*! import() */ "resources_js_Components_Usuarios_Index_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./Components/Usuarios/Index.vue */ "./resources/js/Components/Usuarios/Index.vue"));
+};
 var routes = [{
   path: '/',
   name: 'dashboard',
   component: DashboardComponent
+}, {
+  path: '/usuarios',
+  name: 'usuarios',
+  component: UsuariosComponent
 }];
 var router = (0,vue_router__WEBPACK_IMPORTED_MODULE_0__.createRouter)({
   history: (0,vue_router__WEBPACK_IMPORTED_MODULE_0__.createWebHistory)(),
@@ -42745,7 +42756,7 @@ module.exports = JSON.parse('{"name":"axios","version":"0.21.4","description":"P
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames not based on template
-/******/ 			if (chunkId === "resources_js_Components_Dashboard_Dashboard_vue") return "js/" + chunkId + ".js";
+/******/ 			if ({"resources_js_Components_Dashboard_Dashboard_vue":1,"resources_js_Components_Usuarios_Index_vue":1}[chunkId]) return "js/" + chunkId + ".js";
 /******/ 			// return url for filenames based on template
 /******/ 			return undefined;
 /******/ 		};
