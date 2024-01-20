@@ -1,8 +1,8 @@
 <template lang="">
     <div class="page-header">
         <div class="page-title">
-            <h4>Product List</h4>
-            <h6>Manage your products</h6>
+            <h4>Lista de Usuarios</h4>
+
         </div>
         <div class="page-btn">
             <a href="#" class="btn btn-added"

@@ -4,13 +4,11 @@
             <div id="sidebar-menu" class="sidebar-menu">
                 <ul>
                     <li class="active">
-                        <router-link to="/"</router-link>
-                        <a href="index.html"
-                            ><img
-                                src="assets/img/icons/dashboard.svg"
-                                alt="img"
-                            /><span> Dashboard</span>
-                        </a>
+                        <router-link to="/"><img
+                            src="assets/img/icons/dashboard.svg"
+                            alt="img"
+                        /><span> Dashboard</span></router-link>
+
                     </li>
 
                     <li class="submenu">
