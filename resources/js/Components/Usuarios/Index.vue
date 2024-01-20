@@ -2,7 +2,6 @@
     <div class="page-header">
         <div class="page-title">
             <h4>Lista de Usuarios</h4>
-
         </div>
         <div class="page-btn">
             <a href="#" class="btn btn-added"
@@ -13,6 +12,15 @@
                 />Nuevo Usuario</a
             >
         </div>
+
+        <el-row>
+            <el-button :icon="Search" circle />
+            <el-button type="primary" :icon="Edit" circle />
+            <el-button type="success" :icon="Check" circle />
+            <el-button type="info" :icon="Message" circle />
+            <el-button type="warning" :icon="Star" circle />
+            <el-button type="danger" :icon="Delete" circle />
+          </el-row>
     </div>
 
     <div class="card">
